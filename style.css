@@ -1,1 +1,50 @@
+/* Estilo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FAEADC;
+  margin: 0;
+  padding: 2rem;
+  color: #3B2B23;
+}
 
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #6C4E3E;
+}
+
+/* Nivel */
+.nivel {
+  margin-bottom: 3rem;
+}
+
+.nivel h2 {
+  font-size: 1.5rem;
+  color: #6C4E3E;
+  margin-bottom: 1rem;
+}
+
+/* Cuadrícula de cursos */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Estilo de cada curso */
+.course {
+  background-color: var(--color, #C8A48A);
+  color: white;
+  padding: 1.2rem;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.course:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
